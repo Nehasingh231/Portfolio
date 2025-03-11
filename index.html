@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+
+    
+    <div class="cursor"></div>
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6 navbar" style="font-family: 'Jura'; font-weight: 600; font-size: 20px; ">
+
+        <div class="text-2xl font-bold  flex items-center " style="color: white;" >
+            <span class="text-lime-500 text-3xl">&#9679;</span> John
+        </div>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="#" class="text-white hover:text-lime-500">Home</a></li>
+            <li><a href="#" class="text-white hover:text-lime-500">About</a></li>
+            <li><a href="#" class="text-white hover:text-lime-500">Services</a></li>
+            <li><a href="#" class="text-white hover:text-lime-500">Projects</a></li>
+            <li><a href="#" class="text-white hover:text-lime-500">Blog</a></li>
+            <li><a href="#" class="text-white hover:text-lime-500">Contact</a></li>
+        </ul>
+        <button class=" contact-btn  hidden md:flex">
+            <div class="contact"><span class="contact-span">Contact Us</span></div>
+            </button>
+
+        <button class="menu-button md:hidden" onclick="toggleNavbar()">
+            <span class="line small"></span>
+            <span class="line big"></span>
+            
+        </button>
+        
+    </nav>
+    <!-- Mobile Menu Dropdown -->
+<div id="mobileMenu" class="md:hidden bg-white shadow-lg absolute top-20 left-0 w-full hidden transition-all duration-300 ease-in-out" style="font-family: 'Jura'; font-weight: 700; ">
+    <ul class="flex flex-col space-y-4 p-6">
+        <li><a href="#" class="text-black hover:text-lime-500">Home</a></li>
+        <li><a href="#" class="text-black hover:text-lime-500">About</a></li>
+        <li><a href="#" class="text-black hover:text-lime-500">Services</a></li>
+        <li><a href="#" class="text-black hover:text-lime-500">Projects</a></li>
+        <li><a href="#" class="text-black hover:text-lime-500">Blog</a></li>
+       
+    </ul>
+   
+    <button class=" contact-btn ml-5 mb-5 ">
+        <div class="contact"><span class="contact-span">Contact Us</span></div>
+        </button>
+</div>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg"></div>
+    <div class="blurred-shape"></div>
+    
+    <section class="flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-20">
+        <div class="max-w-lg">
+            <h1 class="text-5xl font-extrabold text-white">
+                HELLO 👋  
+                <br />
+                I’M <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-red-500">JOHN</span>
+                <br />
+                <span id="typed-text" class="gradient-text"></span>
+            </h1>
+            
+                
+            <p class="mt-4 text-gray-400 " style="font-family: 'Jura'; font-weight: 600; ">Welcome to my digital space! This portfolio is a curated showcase of my journey, expertise, and accomplishments. Here, you'll find a collection of my finest work, reflecting my passion, creativity, and dedication to excellence. Whether it's innovative projects, impactful collaborations, or continuous learning, this platform is a testament to my growth as a professional. Explore my world and discover how I can bring value to your next endeavor.</p>
+            <div class="mt-6 flex space-x-4" style="font-family: 'Jura'; font-weight: 600; " >
+                <button class="view-btn font-medium">
+                    <span class="shadow" ></span>
+                    <span class="edge"></span>
+                    <span class="front text">Get In Touch</span>
+                 </button>
+                <button class=" buttonDownload ">Download CV </button>
+            </div>
+        </div>
+        <div class="relative mt-10 md:mt-0 flex justify-center w-full md:w-1/2  ">
+            <div class="background-shape absolute -top-4 -left-4 bg-lime-200 w-24 h-24 rounded-full"></div>
+            <div class="background-shape second absolute bottom-0 right-1 bg-purple-200 w-40 h-40 rounded-full"></div>
+            <img src="https://img.freepik.com/free-photo/happy-business-man-shirt-with-crossed-arms-looking-away_171337-5011.jpg?t=st=1741604232~exp=1741607832~hmac=14b61a8a6646c8f7f70c55e200403040abf73a3b42da6764ed9297a3347c0c18&w=1380" alt="Jane Cooper" class=" object-contain rounded-lg shadow-md animated-image">
+        </div>
+    </section>
+    <!-- ************* About Section ******** -->
+ 
+    <section class="bg-[#08425A] flex justify-center items-center min-h-screen relative">
+        <!-- Background Shapes -->
+        <div class="absolute top-5 right-5 w-20 h-20 bg-white opacity-5 rounded-full animate-wave "></div>
+                <div class="absolute top-0 right-0 w-24 h-24 border-4 border-white opacity-10 rounded-full animate-expand "></div>
+        
+                <div class="absolute top-60 left-5 w-20 h-20 bg-white opacity-5 rounded-full animate-expand "></div>
+                <div class="absolute top-60 left-0 w-24 h-24 border-4 border-white opacity-10 rounded-full animate-expand "></div>
+    
+        <!-- Main Content -->
+        <div class="relative mt-10 mb-10 w-full max-w-5xl bg-[#032230] rounded-lg p-10 flex flex-col md:flex-row items-center space-y-6 md:space-x-10 md:space-y-0">
+            <div class="bg-white p-10 shadow-2xl rounded-lg w-full md:w-1/2 max-w-lg text-center md:text-left  " >
+                <h2 class="text-2xl font-bold mb-4">Who Am I</h2>
+                <p class="text-gray-600 text-sm mb-4" style="font-family: 'jura'; font-weight: 500;">
+                    I’m John, a passionate Front-End Developer skilled in React.js, Redux, jQuery, HTML, CSS, and JavaScript. I specialize in building responsive, interactive, and visually appealing web applications. With a strong foundation in UI/UX design and modern web technologies, I strive to create seamless digital experiences.
+                </p>
+                <div class="mt-4 flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-black text-2xl"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-blue-500 hover:text-blue-700 text-2xl"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600 text-2xl"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+    
+            <div class="w-full md:w-1/2 max-w-lg relative">
+                <img src="https://img.freepik.com/free-photo/medium-shot-man-posing-indoors_23-2149438602.jpg?t=st=1741612419~exp=1741616019~hmac=d5dceec3eb3934800ce2471c27ee351c8e71cbea6f42cc92e36af80b3e7d1b7a&w=740" 
+                alt="Person" 
+                class="w-full h-auto object-cover rounded-lg shadow-lg">
+                <div class="absolute bottom-5 right-5 w-20 h-20 bg-white opacity-30 rounded-full"></div>
+                <div class="absolute bottom-0 right-0 w-24 h-24 border-4 border-white opacity-60 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!--************** Education Section ******** -->
+    <section class="w-full px-4 sm:px-6 py-16 bg-[#032230] ">
+
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div class="relative w-full max-w-md mx-auto">
+                <div class="relative w-full h-[300px] bg-teal-200 rounded-lg overflow-hidden">
+                    <img src="https://img.freepik.com/free-photo/front-view-male-student-wearing-black-backpack-holding-copybooks-files-blue-wall_140725-42636.jpg?t=st=1741629319~exp=1741632919~hmac=8a6a84f0697ca48a8588434c1771e31ad83279259807f255572edd26a66d7b99&w=996" alt="Student" class="w-full h-full object-cover">
+                </div>
+                <img src="https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Graduation cap" class="absolute bottom-[-20px] right-[-20px] w-24 h-24 border-4 border-white rounded-lg shadow-lg">
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mt-2 text-white">Study with the <span class="text-white">University of <span class="underline">London</span>,</span> anywhere in the world</h2>
+                <p class="text-gray-400 mt-4"style="font-family: 'Jura'; font-weight: 600; " >Our unique learning environment sparks physical growth and discovery while our creative curriculum combines the traditional and the progressive.</p>
+            </div>
+        </div>
+    
+        <!-- Education Details -->
+        <div class="flex justify-center items-center bg-gray-700 px-6 py-12 mt-10 rounded-lg " style="font-family: 'Jura'; font-weight: 600; "> <!-- Reduced py-16 to py-12 and removed min-h-screen -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-[1200px] cursor-pointer">
+                <!-- Undergraduate -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="https://img.freepik.com/free-vector/illustration-graduation-hat_53876-40888.jpg?w=900" 
+                        alt="Undergraduate icon" 
+                        class="w-20 h-20 object-contain mx-auto mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 break-words">Undergraduate</h3>
+                    <p class="text-gray-500 mt-2">Be part of a close-knit, vibrant learning community.</p>
+                </div>
+        
+                <!-- Postgraduate -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="https://img.freepik.com/free-vector/graduation-cap-diploma-with-seal-3d-icon-hat-with-tassel-paper-scroll-with-badge-3d-vector-illustration-white-background-education-graduation-success-concept_74855-26002.jpg?w=900" 
+                        alt="Postgraduate icon" 
+                        class="w-20 h-20 object-contain mx-auto mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 break-words">Postgraduate</h3>
+                    <p class="text-gray-500 mt-2">Advance your career with expert-led programs.</p>
+                </div>
+        
+                <!-- Short Courses -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="https://img.freepik.com/free-vector/illustration-notebook-icon_53876-5858.jpg?w=900" 
+                        alt="Short courses icon" 
+                        class="w-20 h-20 object-contain mx-auto mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 break-words">Short Courses</h3>
+                    <p class="text-gray-500 mt-2">Enhance your skills with specialized training.</p>
+                </div>
+        
+                <!-- Online Learning -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <img src="https://img.freepik.com/free-vector/online-certification-illustration_23-2148575636.jpg?w=900" 
+                        alt="Online learning icon" 
+                        class="w-20 h-20 object-contain mx-auto mb-6">
+                    <h3 class="text-xl font-bold text-gray-800 break-words">Online Learning</h3>
+                    <p class="text-gray-500 mt-2">Flexible and interactive courses from anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ******* Skill Section *********** -->
+<section class="bg-black flex justify-center items-center py-10 relative overflow-hidden ">
+    <div class="background-circle circle1"></div>
+    <div class="background-circle circle2"></div>
+    
+    <div class="w-3/4 bg-gray-200 rounded-lg shadow-lg p-8 relative overflow-hidden z-10">
+        <!-- Section Title -->
+        <div class="absolute top-0 left-0 right-0 h-16 bg-[#032230] text-white text-center flex items-center justify-center text-xl font-semibold z-10" style="font-family: 'Jura'; font-weight: bolder; font-size: 30px;">
+            MY SKILLS ✍️
+        </div>
+        
+        <!-- SVG Decorative Wave -->
+        <svg class="absolute top-0 left-0 w-full" viewBox="0 0 1440 250" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#032230" fill-opacity="1" d="M0,160L48,170C96,180,192,200,288,200C384,200,480,180,576,160C672,140,768,120,864,110C960,100,1056,100,1152,110C1248,120,1344,140,1392,150L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+
+        <!-- Skills Grid -->
+        <div class="mt-16 grid grid-cols-3 gap-8 place-items-center relative z-10">
+            <div class="flex flex-col items-center ">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-16 h-16 skill-icon" alt="HTML5">
+                <p class="mt-2 text-gray-800 text-lg font-semibold">HTML5</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-16 h-16 skill-icon" alt="CSS3">
+                <p class="mt-2 text-gray-800 text-lg font-semibold">CSS3</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-16 h-16 skill-icon" alt="JavaScript">
+                <p class="mt-2 text-gray-800 text-lg font-semibold">JavaScript</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="w-16 h-16 skill-icon" alt="Bootstrap">
+                <p class="mt-2 text-gray-800 text-lg font-semibold">Bootstrap</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-16 h-16 skill-icon" alt="Tailwind CSS">
+                <p class="mt-2 text-gray-800 text-lg font-semibold">Tailwind CSS</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-16 h-16 skill-icon" alt="React">
+                <p class="mt-2 text-gray-800 text-lg font-semibold">React</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" class="w-16 h-16 skill-icon" alt="Vue.js">
+                <p class="mt-2 text-gray-800 text-lg font-semibold">Vue.js</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="w-16 h-16 skill-icon" alt="Figma">
+                <p class="mt-2 text-gray-800 text-lg font-semibold">Figma</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="w-16 h-16 skill-icon" alt="PHP">
+                <p class="mt-2 text-gray-800 text-lg font-semibold"  >PHP</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" class="w-16 h-16 skill-icon" alt="Laravel">
+                <p class="mt-2 text-gray-800 text-lg font-semibold">Laravel</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ********** Experience Section **************** -->
+<section id="experience" class="bg-gray-900 text-white py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Experience</h2>
+      
+      <div class="space-y-8">
+        <!-- Job 1 -->
+        <div class="experience-card bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+          <h3 class="text-2xl font-semibold">Frontend Developer</h3>
+          <p class="text-gray-400" style="font-family: 'jura';" >Tech Solutions Pvt. Ltd. | Jan 2023 - Present</p>
+          <ul class="list-disc list-inside text-gray-300 mt-2" style="font-family: 'jura';" >
+            <li>Developed interactive UI using React.js and Redux.</li>
+            <li>Optimized website performance and SEO.</li>
+            <li>Collaborated with designers and backend developers.</li>
+          </ul>
+        </div>
+  
+        <!-- Job 2 -->
+        <div class="experience-card bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-green-500">
+          <h3 class="text-2xl font-semibold">Web Developer</h3>
+          <p class="text-gray-400" style="font-family: 'jura';" >CodeCrafters Inc. | Jun 2021 - Dec 2022</p>
+          <ul class="list-disc list-inside text-gray-300 mt-2" style="font-family: 'jura';" >
+            <li>Built responsive websites using HTML, CSS, JavaScript.</li>
+            <li>Implemented RESTful APIs and improved site speed.</li>
+            <li>Maintained website security and accessibility.</li>
+          </ul>
+        </div>
+  
+        <!-- Job 3 -->
+        <div class="experience-card bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-purple-500">
+          <h3 class="text-2xl font-semibold">UI/UX Designer</h3>
+          <p class="text-gray-400" style="font-family: 'jura';" >Creative Minds | Mar 2020 - May 2021</p>
+          <ul class="list-disc list-inside text-gray-300 mt-2" style="font-family: 'jura';" >
+            <li>Designed wireframes and prototypes using Figma.</li>
+            <li>Enhanced user experience through intuitive designs.</li>
+            <li>Worked closely with developers for seamless implementation.</li>
+          </ul>
+        </div>
+  
+        <!-- Job 4 -->
+        <div class="experience-card bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-red-500">
+          <h3 class="text-2xl font-semibold">Junior Web Developer</h3>
+          <p class="text-gray-400" style="font-family: 'jura';">Digital Wave | Aug 2018 - Feb 2020</p>
+          <ul class="list-disc list-inside text-gray-300 mt-2" style="font-family: 'jura';" >
+            <li>Built static and dynamic websites for clients.</li>
+            <li>Assisted in debugging and website maintenance.</li>
+            <li>Worked on CMS platforms like WordPress.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ******* Project Section ****** -->
+  <section class="projects bg-[#032230] text-white py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">My Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="project-card bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          <img src="https://img.freepik.com/free-photo/side-view-man-working-with-computer_23-2149930993.jpg?t=st=1741678526~exp=1741682126~hmac=cd1f9abfaa82b61b61ddfbcbce9d0b52c0dd697891939a41a0d6aee276374346&w=996" alt="Project 1" class="w-full h-auto aspect-video object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold">Todo List App</h3>
+            <p class="text-gray-400 mt-2" style="font-family: 'jura';"  >A simple and interactive todo list app built with React.js and Redux.</p>
+            <div class="flex justify-center mt-8">
+                <button class="source-btn">
+                    Source Code
+                  </button>
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          <img src="https://img.freepik.com/free-photo/side-view-man-working-with-computer_23-2149930993.jpg?t=st=1741678526~exp=1741682126~hmac=cd1f9abfaa82b61b61ddfbcbce9d0b52c0dd697891939a41a0d6aee276374346&w=996" alt="Project 2" class="w-full h-auto aspect-video object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold">YouTube Clone</h3>
+            <p class="text-gray-400 mt-2" style="font-family: 'jura';"  >A YouTube-like platform built with React, Redux, and YouTube API.</p>
+            <div class="flex justify-center mt-8">
+                <button class="source-btn">
+                    Source Code
+                  </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          <img src="https://img.freepik.com/free-photo/side-view-man-working-with-computer_23-2149930993.jpg?t=st=1741678526~exp=1741682126~hmac=cd1f9abfaa82b61b61ddfbcbce9d0b52c0dd697891939a41a0d6aee276374346&w=996" alt="Project 3" class="w-full h-auto aspect-video  object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold">Rock Paper Scissors</h3>
+            <p class="text-gray-400 mt-2" style="font-family: 'jura';"  >A classic game implemented using HTML, CSS, and JavaScript.</p>
+            <div class="flex justify-center mt-8">
+                <button class="source-btn">
+                    Source Code
+                  </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card bg-gray-800 rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          <img src="https://img.freepik.com/free-photo/side-view-man-working-with-computer_23-2149930993.jpg?t=st=1741678526~exp=1741682126~hmac=cd1f9abfaa82b61b61ddfbcbce9d0b52c0dd697891939a41a0d6aee276374346&w=996" alt="Project 4" class="w-full h-auto aspect-video  object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold">3D Shopping Mall</h3>
+            <p class="text-gray-400 mt-2" style="font-family: 'jura';" >An immersive 3D shopping mall experience using Three.js.</p>
+            <div class="flex justify-center mt-8">
+                <button class="source-btn">
+                    Source Code
+                  </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+    <script src="index.js" ></script>
+</body>
+</html>
