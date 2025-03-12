@@ -9,6 +9,11 @@ body {
    
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -86,7 +91,7 @@ body {
 
 @media (max-width: 768px) {
     .menu-button {
-        display: flex; /* Show on small screens */
+        display: flex !important;
         width: 50px;
         height: 50px;
         background-color: #c4fb6d;
@@ -155,7 +160,6 @@ body {
     font-weight: bold;
     transition: transform 0.1s ease-out, background-color 0.2s ease-in-out;
 }
-
 
 
 
@@ -251,6 +255,7 @@ body {
 
 .navbar{
     color: white;
+  
 }
 
 
@@ -668,5 +673,119 @@ body {
 
 .animate-expand {
   animation: expand 3s ease-in-out infinite;
+}
+
+/* ******* Contact section ******* */
+.contact-card {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  background: #111111;
+  position: relative;
+  padding: 2rem;
+}
+
+/* Yellow Blob */
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #ffd700;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  z-index: 1;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Sidebar Icons */
+.side-icons {
+  position: absolute;
+  left: 15px; /* Increased visibility */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 50;
+ 
+}
+
+/* Side Icon Styling */
+.icon-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Improved shadow */
+  font-size: 1.5rem;
+}
+
+/* Ensure side icons are visible */
+.icon-button i {
+  font-size: 1.3rem;
+}
+
+
+/* From Uiverse.io by eirikvold */ 
+.send-btn {
+  font-family: inherit;
+  font-size: 18px;
+  /* background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%); */
+  background: linear-gradient(to bottom, #ffeb3b 0%, #ffc107 100%);
+
+  color: black;
+  padding: 0.8em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.send-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.send-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.send-btn span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+.send-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+.send-btn .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+.send-btn:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.send-btn:hover svg {
+  transform: rotate(45deg);
 }
 
